@@ -1,0 +1,16 @@
+<manifest version="1.0" type="device">
+    <hal format="hidl">
+        <name>vendor.nvidia.hardware.media.propertyhal</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>INvMediaProperty</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.nvidia.hardware.media.vndsvc</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+    </hal>
+</manifest>
