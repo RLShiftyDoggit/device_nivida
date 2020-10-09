@@ -1,0 +1,6 @@
+[
+ {
+   "repository": "android_device_nvidia_quill",
+   "target_path": "device/nvidia/quill"
+ }
+]

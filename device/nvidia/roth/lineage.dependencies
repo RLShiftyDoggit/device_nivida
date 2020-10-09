@@ -1,0 +1,22 @@
+[
+ {
+   "repository": "android_device_nvidia_shield-common",
+   "target_path": "device/nvidia/shield-common"
+ },
+ {
+   "repository": "android_device_nvidia_t114-common",
+   "target_path": "device/nvidia/t114-common"
+ },
+ {
+   "repository": "android_device_nvidia_touch",
+   "target_path": "device/nvidia/touch"
+ },
+ {
+   "repository": "android_hardware_nvidia_sensors",
+   "target_path": "hardware/nvidia/sensors"
+ },
+ {
+   "repository": "android_kernel_nvidia_mainline",
+   "target_path": "kernel/nvidia/mainline"
+ },
+]

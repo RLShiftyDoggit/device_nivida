@@ -1,0 +1,34 @@
+#Copyright (c) 2011-2014 NVIDIA Corporation.  All Rights Reserved.
+#Copyright (C) 2019 The LineageOS Project
+#
+#NVIDIA Corporation and its licensors retain all intellectual property and
+#proprietary rights in and to this software and related documentation.  Any
+#use, reproduction, disclosure or distribution of this software and related
+#documentation without an express license agreement from NVIDIA Corporation
+#is strictly prohibited.
+
+import /vendor/etc/init/hw/init.tegra_emmc.rc
+import /vendor/etc/init/hw/init.tn8_common.rc
+import /vendor/etc/init/hw/init.t124.rc
+import /vendor/etc/init/hw/init.cal.rc
+import /vendor/etc/init/hw/init.ray_touch.rc
+
+on fs
+    mount_all /vendor/etc/fstab.loki
+    swapon_all /vendor/etc/fstab.loki
+
+on post-fs-data
+    setprop ro.hardware.gps mtk
+    #start mnld
+
+    # LEDs
+    chown system system /sys/class/nvshieldled/2-1:1.1/brightness
+    chown system system /sys/class/nvshieldled/2-1:1.1/brightness2
+    chown system system /sys/class/nvshieldled/2-1:1.1/state
+    chown system system /sys/class/nvshieldled/2-1:1.1/state2
+
+# mtk gps mnld
+    service mnld /vendor/bin/mnld
+    socket mnld stream 666 system system
+    class main
+    disabled

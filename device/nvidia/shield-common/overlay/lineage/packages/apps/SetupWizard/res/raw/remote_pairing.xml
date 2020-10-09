@@ -1,0 +1,25 @@
+<remote-pairing type="video">
+  <prepaired-searching>
+    <item name="pair_loop" count="0" />
+  </prepaired-searching>
+  <initial-scan>
+    <item name="pair_loop" count="3" />
+    <item name="pair_start" count="0" />
+  </initial-scan>
+  <prepaired-initial-scan>
+    <item name="pair_start" count="0" />
+  </prepaired-initial-scan>
+  <rescan>
+    <item name="pair_start" count="0" />
+  </rescan>
+  <bond>
+    <item name="pair_connecting_JARVIS" count="0" />
+  </bond>
+  <success>
+    <item name="pair_success_JARVIS" count="1" />
+  </success>
+  <error>
+    <item name="pair_error_JARVIS" count="1" />
+  </error>
+</remote-pairing>
+

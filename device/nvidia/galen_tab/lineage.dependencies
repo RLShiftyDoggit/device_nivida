@@ -1,0 +1,6 @@
+[
+ {
+   "repository": "android_device_nvidia_galen",
+   "target_path": "device/nvidia/galen"
+ }
+]

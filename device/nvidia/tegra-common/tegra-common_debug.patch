@@ -1,0 +1,17 @@
+diff --git a/tegra.mk b/tegra.mk
+index c05c561..b236d70 100644
+--- a/tegra.mk
++++ b/tegra.mk
+@@ -57,3 +57,12 @@ PRODUCT_PACKAGES += \
+     libwpa_client \
+     wpa_supplicant \
+     wpa_supplicant.conf
++
++PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
++    ro.adb.secure=0 \
++    ro.secure=0 \
++    ro.debuggable=1
++
++PRODUCT_PROPERTY_OVERRIDES += \
++    persist.sys.usb.config=mtp,adb \
++    persist.sys.root_access=2
