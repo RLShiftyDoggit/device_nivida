@@ -1,0 +1,6 @@
+This is the sensor code used by the Nvidia Shield stock ROMs.
+
+It is based on the code at:
+http://nv-tegra.nvidia.com/gitweb/?p=tegra/prebuilts-device-nvidia.git;a=tree;f=drivers/sensors_514;h=9e722b0a2e0d35148588c28193296d68958f1c3f;hb=rel-st8-l-r6-partner
+
+Roth and shieldtablet are currently supported.

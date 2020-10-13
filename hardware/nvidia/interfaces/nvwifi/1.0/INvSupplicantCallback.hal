@@ -1,0 +1,13 @@
+package vendor.nvidia.hardware.nvwifi@1.0;
+
+interface INvSupplicantCallback {
+    onDriverHang(
+        );
+
+    onEapStarted(
+            vec<uint8_t> var1
+        );
+
+    onWifiP2pFreqConflict(
+        );
+};
